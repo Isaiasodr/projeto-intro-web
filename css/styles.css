@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.user-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: grey;
+    width: 200px;
+    height: 320px;
+    margin-left: 5px;
+}
+
+
+.navbar {
+    text-align: center;
+    background-color: rgb(30, 100, 141);
+    padding: 20px;
+
+}
+
+.navbar .logo {
+    color: white;
+}
+
+.navbar .logo img {
+    width: 20px;
+    color: white;
+}
+
+.navbar .logo span {
+    color: rgb(215, 189, 36);
+}
+
+.navbar input {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 5em;
+    position: relative;
+}
+
+/* search */
+.search {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: rgb(30, 100, 141);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: azure;
+    color: rgb(30, 100, 141);
+    transition: .5s ease;
+}
+
+/* movies section */
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(30, 100, 141);
+    margin-top: auto;
+
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
+footer p span {
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+}

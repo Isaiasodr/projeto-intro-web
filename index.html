@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Projeto intro Web</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Labe<span>Cine</span></h1>
+    </div>
+    <div class="search">
+      <input
+        type="search"
+        id="search"
+        placeholder="Títulos e Gêneros"
+        data-search
+      />
+      <button>Pesquisar</button>
+    </div>
+    <div class="user-cards" data-user-cards-container></div>
+    <template data-user-template>
+      <div class="card">
+        <div class="header" data-header>
+          <img src="" style="height: 230px; width: 200px" alt="" data-img />
+        </div>
+        <div class="name" data-name></div>
+        <div class="duration" data-duration></div>
+        <div class="genero" data-genr></div>
+      </div>
+    </template>
+    <footer>
+      <p>&copy; LabeCine 2022 Criado por <span>Isaías Oliveira</span></p>
+    </footer>
+  </body>
+  <script src="js/scripts.js" defer></script>
+</html>
