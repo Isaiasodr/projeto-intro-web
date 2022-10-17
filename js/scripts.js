@@ -8,16 +8,12 @@ searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
 
   movies.forEach((movie) => {
-    console.log(movie);
     if (
       movie.titulo.toLowerCase().includes(value) ||
       movie.genero.toLowerCase().includes(value)
     ) {
       movie.element.style.visibility = "visible";
-    } else if (
-      !movie.titulo.toLowerCase().includes(value) &&
-      !movie.genero.toLowerCase().includes(value)
-    ) {
+    } else {
       movie.element.style.visibility = "hidden";
     }
   });
@@ -26,7 +22,7 @@ searchInput.addEventListener("input", (e) => {
 const filmes = [
   {
     titulo: "Infiltrado",
-    genero: "genero:" + " Ação",
+    genero: "gênero:" + " Ação",
     duracao: "duração:" + 120 + " minutos",
     src: "img/infiltrado.jpg",
   },
@@ -38,11 +34,42 @@ const filmes = [
   },
   {
     titulo: "Vingadores",
-    genero: "genero:" + " Ação e fantasia",
-    duracao: "duração:" + 180 + " minutos",
+    genero: "gênero:" + " Ação e fantasia",
+    duracao: "duração: " + 180 + " minutos",
     src: "img/vingadores.jpg",
   },
+  {
+    titulo: "Invocação do mal",
+    genero: "gênero:" + " Terror",
+    duracao: "duração: " + 90 + " minutos",
+    src: "img/invocação do mal.jpg",
+  },
+  {
+    titulo: "Invocação do mal 2",
+    genero: "gênero:" + " Terror",
+    duracao: "duração: " + 90 + " minutos",
+    src: "img/invocação do mal 2.jpg",
+  },
+  {
+    titulo: "A Freira",
+    genero: "gênero:" + " Terror",
+    duracao: "duração:" + 90 + " minutos",
+    src: "img/a freira.jpg",
+  },
+  {
+    titulo: "Harry potter e a Pedra Filosofal",
+    genero: "gênero:" + " Fantasia",
+    duracao: "duração:" + 90 + " minutos",
+    src: "img/harry.jpg",
+  },
+  {
+    titulo: "Harry potter e a Câmara Secreta",
+    genero: "gênero:" + " Fantasia",
+    duracao: "duração:" + 90 + " minutos",
+    src: "img/harry2.webp",
+  },
 ];
+
 movies = filmes.map((filme) => {
   const card = userCardTemplate.content.cloneNode(true).children[0];
   console.log(card);

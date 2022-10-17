@@ -18,17 +18,22 @@
         placeholder="Títulos e Gêneros"
         data-search
       />
-      <button>Pesquisar</button>
+      <p class="button">Pesquisar</p>
     </div>
+    <p id="resultado" style="visibility: hidden">Nenhum filme encontrado!</p>
     <div class="user-cards" data-user-cards-container></div>
+
     <template data-user-template>
-      <div class="card">
-        <div class="header" data-header>
-          <img src="" style="height: 230px; width: 200px" alt="" data-img />
+      <div class="container">
+        <div class="card">
+          <div class="header" data-header>
+            <img src="" style="height: 230px; width: 200px" alt="" data-img />
+          </div>
+          <div class="name" data-name></div>
+          <div class="duration" data-duration></div>
+          <div class="genero" data-genr></div>
         </div>
-        <div class="name" data-name></div>
-        <div class="duration" data-duration></div>
-        <div class="genero" data-genr></div>
+        <div></div>
       </div>
     </template>
     <footer>
