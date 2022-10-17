@@ -23,19 +23,19 @@ const filmes = [
   {
     titulo: "Infiltrado",
     genero: "gênero:" + " Ação",
-    duracao: "duração:" + 120 + " minutos",
+    duracao: "duração: " + 120 + " minutos",
     src: "img/infiltrado.jpg",
   },
   {
     titulo: "Assassino a preço fixo 2",
-    genero: "Ação",
-    duracao: 90,
+    genero: "gênero: " + "Ação",
+    duracao: "duração: " + 99 + " minutos",
     src: "img/104239.jpg",
   },
   {
-    titulo: "Vingadores",
+    titulo: "Vingadores Ultimato",
     genero: "gênero:" + " Ação e fantasia",
-    duracao: "duração: " + 180 + " minutos",
+    duracao: "duração: " + 200 + " minutos",
     src: "img/vingadores.jpg",
   },
   {
